@@ -7,27 +7,27 @@
 #include <string>
 
 // Task 1.
-void multi_2(std::vector<int>& input);
-void reduce_a(std::vector<int>& input, int a);
-void div_on_first(std::vector<int>& input);
+void multi_2(std::vector<int>& A);
+void reduce_a(std::vector<int>& A, int a);
+void div_on_first(std::vector<int>& A);
 
 // Task 2.
-int sum(const std::vector<int>& input);
-int square_sum(const std::vector<int>& input);
-int sum_six(const std::vector<int>& input);
-int sum_k(const std::vector<int>& input, int k1, int k2);
-int mean(const std::vector<int>& input);
-int mean_k(const std::vector<int>& input, int s1, int s2);
+int sum(const std::vector<int>& A);
+int square_sum(const std::vector<int>& A);
+int sum_six(const std::vector<int>& A);
+int sum_k(const std::vector<int>& A, int k1, int k2);
+int mean(const std::vector<int>& A);
+int mean_k(const std::vector<int>& A, int s1, int s2);
 
 // Task 3.
-void swap_el(std::vector<int>& input);
+void swap_el(std::vector<int>& A);
 
 // Task 4.
-void remove_negative(std::vector<int>& input);
-void remove_last_even(std::vector<int>& input);
+void remove_negative(std::vector<int>& A);
+void remove_last_even(std::vector<int>& A);
 
 // Task 5.
-bool name_is_even(const std::string& name);
+bool name_is_even(const std::string& str);
 
 // Task 6.
 bool first_is_longer(const std::string& name_one, const std::string& name_two);
