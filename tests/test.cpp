@@ -1,6 +1,6 @@
 // Copyright 2018 Your Name <your_email>
 
-#include "tasks.hpp"
+#include <tasks.hpp>
 
 #include <gtest/gtest.h>
 
@@ -30,11 +30,11 @@ TEST(Task_1_2, Test) {
   EXPECT_EQ(3, v[3]);
 
   std::vector<int> v1 = {-1, -2, 3, 4};
-  multi_2(v1, -1);
-  EXPECT_EQ(-2, v1[0]);
-  EXPECT_EQ(-3, v1[1]);
-  EXPECT_EQ(2, v1[2]);
-  EXPECT_EQ(3, v1[3]);
+  reduce_a(v1, -1);
+  EXPECT_EQ(0, v1[0]);
+  EXPECT_EQ(-1, v1[1]);
+  EXPECT_EQ(4, v1[2]);
+  EXPECT_EQ(5, v1[3]);
 }
 
 TEST(Task_1_3, Test) {
@@ -94,7 +94,7 @@ TEST(Task_2_5, Test) {
   EXPECT_EQ(1, mean(v1));
 }
 
-TEST(Task_2_5, Test) {
+TEST(Task_2_6, Test) {
   std::vector<int> v = {7, 2, 3, 4};
   EXPECT_EQ(4, mean_k(v, 0, 3));
 
